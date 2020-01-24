@@ -4,10 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 
+import { RlUiModule } from '@rad/rl-ui';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    RlUiModule,
     RouterModule.forRoot([], { initialNavigation: 'enabled' })
   ],
   providers: [],

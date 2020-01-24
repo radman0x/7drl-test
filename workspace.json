@@ -5,7 +5,7 @@
       "projectType": "library",
       "root": "libs/rl-ui",
       "sourceRoot": "libs/rl-ui/src",
-      "prefix": "scratch2",
+      "prefix": "rad",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -83,7 +83,7 @@
       "schematics": {},
       "root": "apps/rl-app",
       "sourceRoot": "apps/rl-app/src",
-      "prefix": "scratch2",
+      "prefix": "rad",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

@@ -1,5 +1,5 @@
 {
-  "npmScope": "scratch2",
+  "npmScope": "rad",
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": {
