@@ -19,6 +19,13 @@
     },
     "rl-ecs": {
       "tags": []
+    },
+    "rl-app": {
+      "tags": []
+    },
+    "rl-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["rl-app"]
     }
   }
 }
