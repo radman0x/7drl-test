@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EntityManager } from 'rad-ecs';
 
 @Component({
   selector: 'rad-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rl-app';
+
+  em = new EntityManager();
 }
