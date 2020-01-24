@@ -95,7 +95,7 @@
             "tsConfig": "apps/rl-app/tsconfig.app.json",
             "aot": false,
             "assets": ["apps/rl-app/src/favicon.ico", "apps/rl-app/src/assets"],
-            "styles": ["apps/rl-app/src/styles.css"],
+            "styles": ["apps/rl-app/src/styles.css", "node_modules/bootstrap/dist/css/bootstrap.min.css"],
             "scripts": []
           },
           "configurations": {
