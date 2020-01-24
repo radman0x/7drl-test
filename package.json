@@ -25,15 +25,27 @@
     "help": "nx help"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "pixi.js-legacy": "^5.2.0",
+    "rad-ecs": "^0.5.4",
+    "rxjs": "^6.5.4"
+  },
   "devDependencies": {
+    "@nrwl/angular": "^8.11.2",
+    "@nrwl/node": "^8.11.2",
     "@nrwl/workspace": "8.11.2",
     "@types/node": "~8.9.4",
     "dotenv": "6.2.0",
+    "eslint": "6.1.0",
+    "prettier": "1.18.2",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "eslint": "6.1.0",
     "typescript": "~3.5.3",
-    "prettier": "1.18.2"
+    "jest-preset-angular": "7.0.0",
+    "@nrwl/jest": "8.11.2",
+    "jest": "24.1.0",
+    "@types/jest": "24.0.9",
+    "ts-jest": "24.0.0"
   }
 }

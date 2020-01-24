@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@scratch2/rl-ui": ["libs/rl-ui/src/index.ts"],
+      "@scratch2/rad-pixi": ["libs/rad-pixi/src/index.ts"],
+      "@scratch2/rl-ecs": ["libs/rl-ecs/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -10,5 +10,15 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "rl-ui": {
+      "tags": []
+    },
+    "rad-pixi": {
+      "tags": []
+    },
+    "rl-ecs": {
+      "tags": []
+    }
+  }
 }
