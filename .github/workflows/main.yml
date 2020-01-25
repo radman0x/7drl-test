@@ -1,6 +1,5 @@
 name: Build
-author: Conrad Mercer
-description: Prod Build
+
 on:
   push:
     branches:
