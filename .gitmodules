@@ -1,3 +1,3 @@
 [submodule "libs"]
 	path = libs
-	url = https://github.com:radman0x/rl-lib.git
+	url = https://github.com/radman0x/rl-lib.git
