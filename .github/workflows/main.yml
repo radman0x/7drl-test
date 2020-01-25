@@ -24,11 +24,11 @@ jobs:
       - uses: montudor/action-zip@v0.1.0
         with:
           args: zip -r build.zip ./dist/apps/rl-app
-      - uses: josephbmanley/butler-publish-itchio-action@master
-        env:
-          BUTLER_CREDENTIALS: ${{ secrets.ITCHIO_BUTLER_TOKEN }}
-          CHANNEL: web
-          ITCH_GAME: prism
-          ITCH_USER: radmangames
-          PACKAGE: build.zip
-# ITCHIO_BUTLER_TOKEN
+      # UNCOMMENT AND CHANGES TARGET ON A FRESH FORK
+      # - uses: josephbmanley/butler-publish-itchio-action@master
+      #   env:
+      #     BUTLER_CREDENTIALS: ${{ secrets.ITCHIO_BUTLER_TOKEN }}
+      #     CHANNEL: web
+      #     ITCH_GAME: prism
+      #     ITCH_USER: radmangames
+      #     PACKAGE: build.zip
