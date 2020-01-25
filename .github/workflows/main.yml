@@ -1,26 +1,12 @@
 name: Build
+author: Conrad Mercer
+description: Prod Build
 on:
   push:
     branches:
       - master
 
 jobs:
-  build:
+  something:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: ['10']
-
-    name: Something
-      run: echo 'blah'
-
-    name: Node ${{ matrix.node }}
-    steps:
-      - uses: actions/checkout@v1
-      - name: Setup node ${{matrix.node}}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-      - run: |
-          npm install
-          npm run build:prod
+    uses: actions/checkout@v2
