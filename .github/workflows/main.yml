@@ -1,14 +1,25 @@
-name: rl-app-skeleton
-
-on: [push]
+name: Build
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v1
-      - name: Build
+
+      - name: Node $
+        uses: actions/setup-node@v1
+        with:
+          node-version: $
+
+      - name: npm install and npm run build
         run: |
           npm ci
-          npx nx build rl-app --prod --base-href "."
+          npm run build:prod
