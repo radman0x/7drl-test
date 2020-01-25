@@ -11,19 +11,16 @@ jobs:
       matrix:
         node-version: ['10']
 
+    name: Something
+      run: echo 'blah'
+
     name: Node ${{ matrix.node }}
     steps:
-      - uses: actions/checkout@v2
-      - name: Checkout submodules
-      shell: bash
-      run: |
-        auth_header="$(git config --local --get http.https://github.com/.extraheader)"
-        git submodule sync --recursive
-        git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive
-    - name: Setup node ${{matrix.node}}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node }}
-    - run: |
-        npm install
-        npm run build:prod
+      - uses: actions/checkout@v1
+      - name: Setup node ${{matrix.node}}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - run: |
+          npm install
+          npm run build:prod
