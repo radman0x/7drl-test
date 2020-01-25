@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: test
+      - name: test2
         shell: bash
         run: |
           auth_header="$(git config --local --get http.https://github.com/.extraheader)"
