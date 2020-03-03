@@ -16,6 +16,7 @@ Really just here to remind you friend ;)
 1. Create a new repository on Github
 1. Navigate to `Repo root > Settings > Secrets`
 1. Create the secret `ITCHIO_BUTLER_TOKEN` and insert your butler token
+1. Edit the `main.yml` in the root and replace the commented section
 1. Set the remote for this repository to the one you've just created
 1. Push your changes
 
