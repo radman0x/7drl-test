@@ -21,3 +21,10 @@ Really just here to remind you friend ;)
 1. Push your changes
 
 *A build on Github should start automatically and push the result to itch.io!*
+
+## Common issues
+
+1. If the skeleton is out of date with the `rl-lib` version
+  1. `npm i` new packages
+  1. Update versions as needed
+

@@ -27,10 +27,6 @@
   },
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "pixi.js-legacy": "^5.2.0",
-    "rad-ecs": "^0.5.4",
-    "rxjs": "^6.5.4",
     "@angular/animations": "^8.2.0",
     "@angular/common": "^8.2.0",
     "@angular/compiler": "^8.2.0",
@@ -39,7 +35,12 @@
     "@angular/platform-browser": "^8.2.0",
     "@angular/platform-browser-dynamic": "^8.2.0",
     "@angular/router": "^8.2.0",
+    "bootstrap": "^4.4.1",
     "core-js": "^2.5.4",
+    "pixi.js-legacy": "^5.2.0",
+    "rad-ecs": "*",
+    "rot-js": "^2.1.1",
+    "rxjs": "^6.5.4",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
