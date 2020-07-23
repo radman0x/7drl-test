@@ -81,7 +81,7 @@
     "rl-app": {
       "projectType": "application",
       "schematics": {},
-      "root": "apps/rl-app",
+      "root": "",
       "sourceRoot": "apps/rl-app/src",
       "prefix": "rad",
       "architect": {
