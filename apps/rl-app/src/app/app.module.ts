@@ -11,9 +11,12 @@ import { RlUiModule } from '@rad/rl-ui';
   imports: [
     BrowserModule,
     RlUiModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    RouterModule.forRoot([], {
+      initialNavigation: 'enabled',
+      relativeLinkResolution: 'legacy',
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

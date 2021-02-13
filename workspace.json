@@ -14,16 +14,20 @@
               "libs/rl-ui/tsconfig.lib.json",
               "libs/rl-ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/rl-ui/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/rl-ui/**"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/rl-ui/jest.config.js",
-            "tsConfig": "libs/rl-ui/tsconfig.spec.json",
-            "setupFile": "libs/rl-ui/src/test-setup.ts"
-          }
+            "jestConfig": "libs/rl-ui/jest.config.js"
+          },
+          "outputs": [
+            "coverage/libs/rl-ui"
+          ]
         }
       },
       "schematics": {}
@@ -41,15 +45,20 @@
               "libs/rad-pixi/tsconfig.lib.json",
               "libs/rad-pixi/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/rad-pixi/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/rad-pixi/**"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/rad-pixi/jest.config.js",
-            "tsConfig": "libs/rad-pixi/tsconfig.spec.json"
-          }
+            "jestConfig": "libs/rad-pixi/jest.config.js"
+          },
+          "outputs": [
+            "coverage/libs/rad-pixi"
+          ]
         }
       }
     },
@@ -66,15 +75,20 @@
               "libs/rl-ecs/tsconfig.lib.json",
               "libs/rl-ecs/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/rl-ecs/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/rl-ecs/**"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/rl-ecs/jest.config.js",
-            "tsConfig": "libs/rl-ecs/tsconfig.spec.json"
-          }
+            "jestConfig": "libs/rl-ecs/jest.config.js"
+          },
+          "outputs": [
+            "coverage/libs/rl-ecs"
+          ]
         }
       }
     },
@@ -94,8 +108,14 @@
             "polyfills": "apps/rl-app/src/polyfills.ts",
             "tsConfig": "apps/rl-app/tsconfig.app.json",
             "aot": false,
-            "assets": ["apps/rl-app/src/favicon.ico", "apps/rl-app/src/assets"],
-            "styles": ["apps/rl-app/src/styles.css", "node_modules/bootstrap/dist/css/bootstrap.min.css"],
+            "assets": [
+              "apps/rl-app/src/favicon.ico",
+              "apps/rl-app/src/assets"
+            ],
+            "styles": [
+              "apps/rl-app/src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -109,7 +129,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -128,7 +147,10 @@
                 }
               ]
             }
-          }
+          },
+          "outputs": [
+            "{options.outputPath}"
+          ]
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -154,16 +176,20 @@
               "apps/rl-app/tsconfig.app.json",
               "apps/rl-app/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/rl-app/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/rl-app/**"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "apps/rl-app/jest.config.js",
-            "tsConfig": "apps/rl-app/tsconfig.spec.json",
-            "setupFile": "apps/rl-app/src/test-setup.ts"
-          }
+            "jestConfig": "apps/rl-app/jest.config.js"
+          },
+          "outputs": [
+            "coverage/"
+          ]
         }
       }
     },
@@ -188,8 +214,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/rl-app-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/rl-app-e2e/**"]
+            "tsConfig": [
+              "apps/rl-app-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/rl-app-e2e/**"
+            ]
           }
         }
       }
