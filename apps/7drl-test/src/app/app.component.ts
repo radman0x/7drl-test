@@ -9,7 +9,7 @@ import { ValueMap } from '@rad/rl-utils';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'rl-app';
+  title = '7drl-test';
 
   em = new EntityManager();
 

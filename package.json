@@ -6,7 +6,7 @@
     "nx": "nx",
     "start": "nx serve",
     "build": "nx build",
-    "build:prod": "nx build rl-app --prod --base-href \".\"",
+    "build:prod": "nx build 7drl-test --prod --base-href \".\"",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",

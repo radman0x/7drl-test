@@ -92,28 +92,28 @@
         }
       }
     },
-    "rl-app": {
+    "7drl-test": {
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "apps/rl-app/src",
+      "sourceRoot": "apps/7drl-test/src",
       "prefix": "rad",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/rl-app",
-            "index": "apps/rl-app/src/index.html",
-            "main": "apps/rl-app/src/main.ts",
-            "polyfills": "apps/rl-app/src/polyfills.ts",
-            "tsConfig": "apps/rl-app/tsconfig.app.json",
+            "outputPath": "dist/apps/7drl-test",
+            "index": "apps/7drl-test/src/index.html",
+            "main": "apps/7drl-test/src/main.ts",
+            "polyfills": "apps/7drl-test/src/polyfills.ts",
+            "tsConfig": "apps/7drl-test/tsconfig.app.json",
             "aot": false,
             "assets": [
-              "apps/rl-app/src/favicon.ico",
-              "apps/rl-app/src/assets"
+              "apps/7drl-test/src/favicon.ico",
+              "apps/7drl-test/src/assets"
             ],
             "styles": [
-              "apps/rl-app/src/styles.css",
+              "apps/7drl-test/src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
@@ -122,8 +122,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/rl-app/src/environments/environment.ts",
-                  "with": "apps/rl-app/src/environments/environment.prod.ts"
+                  "replace": "apps/7drl-test/src/environments/environment.ts",
+                  "with": "apps/7drl-test/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -155,37 +155,37 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rl-app:build"
+            "browserTarget": "7drl-test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "rl-app:build:production"
+              "browserTarget": "7drl-test:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rl-app:build"
+            "browserTarget": "7drl-test:build"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "apps/rl-app/tsconfig.app.json",
-              "apps/rl-app/tsconfig.spec.json"
+              "apps/7drl-test/tsconfig.app.json",
+              "apps/7drl-test/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!apps/rl-app/**"
+              "!apps/7drl-test/**"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "apps/rl-app/jest.config.js"
+            "jestConfig": "apps/7drl-test/jest.config.js"
           },
           "outputs": [
             "coverage/"
@@ -193,21 +193,21 @@
         }
       }
     },
-    "rl-app-e2e": {
-      "root": "apps/rl-app-e2e",
-      "sourceRoot": "apps/rl-app-e2e/src",
+    "7drl-test-e2e": {
+      "root": "apps/7drl-test-e2e",
+      "sourceRoot": "apps/7drl-test-e2e/src",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/rl-app-e2e/cypress.json",
-            "tsConfig": "apps/rl-app-e2e/tsconfig.e2e.json",
-            "devServerTarget": "rl-app:serve"
+            "cypressConfig": "apps/7drl-test-e2e/cypress.json",
+            "tsConfig": "apps/7drl-test-e2e/tsconfig.e2e.json",
+            "devServerTarget": "7drl-test:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "rl-app:serve:production"
+              "devServerTarget": "7drl-test:serve:production"
             }
           }
         },
@@ -215,11 +215,11 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "apps/rl-app-e2e/tsconfig.e2e.json"
+              "apps/7drl-test-e2e/tsconfig.e2e.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!apps/rl-app-e2e/**"
+              "!apps/7drl-test-e2e/**"
             ]
           }
         }

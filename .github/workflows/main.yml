@@ -23,12 +23,12 @@ jobs:
       - run: npm run build:prod
       - uses: montudor/action-zip@v0.1.0
         with:
-          args: zip -r build.zip ./dist/apps/rl-app
+          args: zip -r build.zip ./dist/apps/7drl-test
       # UNCOMMENT AND CHANGE ENV BELOW TO  RETARGET ON A FRESH FORK
-      # - uses: josephbmanley/butler-publish-itchio-action@master
-      #   env:
-      #     BUTLER_CREDENTIALS: ${{ secrets.ITCHIO_BUTLER_TOKEN }}
-      #     CHANNEL: web
-      #     ITCH_GAME: prism
-      #     ITCH_USER: radmangames
-      #     PACKAGE: build.zip
+      - uses: josephbmanley/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.ITCHIO_BUTLER_TOKEN }}
+          CHANNEL: web
+          ITCH_GAME: testtesttest
+          ITCH_USER: radmangames
+          PACKAGE: build.zip

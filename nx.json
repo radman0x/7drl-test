@@ -21,12 +21,12 @@
     "rl-ecs": {
       "tags": []
     },
-    "rl-app": {
+    "7drl-test": {
       "tags": []
     },
-    "rl-app-e2e": {
+    "7drl-test-e2e": {
       "tags": [],
-      "implicitDependencies": ["rl-app"]
+      "implicitDependencies": ["7drl-test"]
     }
   }
 }
